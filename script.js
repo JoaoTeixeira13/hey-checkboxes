@@ -9,3 +9,7 @@ nativeCheckbox.addEventListener("change", () => {
 customCheckbox.addEventListener("change", () => {
     nativeCheckbox.checked = customCheckbox.checked;
 });
+
+toggleButton.addEventListener("click", () => {
+    nativeCheckbox.classList.toggle("visible");
+});

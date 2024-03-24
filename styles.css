@@ -5,6 +5,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+#native-input {
+    visibility: hidden;
+}
 input {
     width: fit-content;
 }
@@ -44,4 +47,26 @@ input {
 }
 .native-checkbox {
     margin-bottom: 1rem;
+}
+#native-input.visible {
+    visibility: visible;
+}
+
+#toggle-button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: #004080;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+#toggle-button:hover {
+    background-color: #0056b3;
+}
+#toggle-button:active {
+    background-color: #004080;
 }
