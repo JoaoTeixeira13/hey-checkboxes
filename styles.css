@@ -1,0 +1,47 @@
+body {
+    padding: 1rem;
+}
+.checkbox-challenge {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: fit-content;
+}
+.custom-checkbox,
+.custom-checkbox input,
+.custom-checkbox .overlay {
+    margin: 0;
+    box-sizing: border-box;
+}
+.custom-checkbox {
+    position: relative;
+}
+
+.custom-checkbox input,
+.custom-checkbox .overlay {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.custom-checkbox .overlay {
+    background-color: white;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.custom-checkbox .overlay .check-icon {
+    color: white;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .overlay {
+    background-color: black;
+}
+
+.custom-checkbox input:checked ~ .overlay .check-icon {
+    display: block;
+}
+.native-checkbox {
+    margin-bottom: 1rem;
+}
