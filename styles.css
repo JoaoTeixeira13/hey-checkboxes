@@ -1,39 +1,41 @@
 body {
-    padding: 1rem;
-}
-.checkbox-challenge {
-    display: flex;
-    flex-direction: column;
-}
-#native-input {
-    visibility: hidden;
+    padding: 2rem;
 }
 input {
     width: fit-content;
 }
-.custom-checkbox,
-.custom-checkbox input,
-.custom-checkbox .overlay {
-    margin: 0;
-    box-sizing: border-box;
+#native-input {
+    visibility: hidden;
+}
+
+.checkbox-challenge {
+    display: flex;
+    flex-direction: column;
 }
 .custom-checkbox {
     position: relative;
 }
 
+.custom-checkbox,
 .custom-checkbox input,
-.custom-checkbox .overlay {
+.overlay {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.custom-checkbox input,
+.overlay {
     position: absolute;
     width: 1.5rem;
     height: 1.5rem;
 }
-.custom-checkbox .overlay {
+.overlay {
     background-color: white;
     border-radius: 3px;
     border: 2px solid black;
 }
 
-.custom-checkbox .overlay .check-icon {
+.check-icon {
     color: white;
     display: none;
 }
@@ -56,9 +58,9 @@ input {
     width: fit-content;
     padding: 10px 20px;
     border-radius: 5px;
-    border-color: #004080;
+    border-color: #edd7c1;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
     cursor: pointer;
